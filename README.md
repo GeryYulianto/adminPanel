@@ -32,7 +32,7 @@ Aplikasi ini menggunakan dua tabel utama:
    - `created_at` (timestamp): Waktu pembuatan record
    - `updated_at` (timestamp): Waktu terakhir update record
 
-![database](readmeImages/Database ER diagram (crow's foot).png)
+![database](readmeImages/database.png)
 
 ## C. Screenshot Aplikasi
 
