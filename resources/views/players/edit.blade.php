@@ -4,6 +4,7 @@
 
 @section('content')
 <h1>Edit Player</h1>
+
 <form action="{{ route('players.update', $player) }}" method="POST">
     @csrf
     @method('PUT')
@@ -21,15 +22,15 @@
     </div>
     <div class="mb-3">
         <label for="points" class="form-label">Points</label>
-        <input type="number" class="form-control" id="points" name="points" value="{{ $player->points }}" required>
+        <input type="number" class="form-control" id="points" name="points" value="{{ $player->points }}" step="0.01" required>
     </div>
     <div class="mb-3">
         <label for="rebounds" class="form-label">Rebounds</label>
-        <input type="number" class="form-control" id="rebounds" name="rebounds" value="{{ $player->rebounds }}" required>
+        <input type="number" class="form-control" id="rebounds" name="rebounds" value="{{ $player->rebounds }}" step="0.01" required>
     </div>
     <div class="mb-3">
         <label for="assists" class="form-label">Assists</label>
-        <input type="number" class="form-control" id="assists" name="assists" value="{{ $player->assists }}" required>
+        <input type="number" class="form-control" id="assists" name="assists" value="{{ $player->assists }}" step="0.01" required>
     </div>
     <button type="submit" class="btn btn-primary">Update Player</button>
 </form>

@@ -16,9 +16,9 @@ class UpdatePlayerRequest extends FormRequest
         return [
             'name' => 'nullable|string|max:255',
             'team_id' => 'nullable|exists:teams,id',
-            'points' => 'nullable|integer|min:0',
-            'rebounds' => 'nullable|integer|min:0',
-            'assists' => 'nullable|integer|min:0',
+            'points' => 'nullable|numeric|min:0',
+            'rebounds' => 'nullable|numeric|min:0',
+            'assists' => 'nullable|numeric|min:0',
         ];
     }
 }
