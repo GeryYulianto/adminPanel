@@ -32,17 +32,17 @@ Aplikasi ini menggunakan dua tabel utama:
    - `created_at` (timestamp): Waktu pembuatan record
    - `updated_at` (timestamp): Waktu terakhir update record
 
-[foto database]
+![database](readmeImages/Database ER diagram (crow's foot).png)
 
 ## C. Screenshot Aplikasi
 
-[foto halaman utama]
+![homepage](readmeImages/homepage.png)
 *Gambar 1: Halaman Utama Aplikasi*
 
-[foto daftar tim]
+![teams](readmeImages/teams.png)
 *Gambar 2: Halaman Daftar Tim*
 
-[foto detail pemain]
+![players](readmeImages/players.png)
 *Gambar 3: Halaman Detail Pemain*
 
 ## D. Dependency
