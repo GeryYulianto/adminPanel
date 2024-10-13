@@ -4,6 +4,19 @@
 
 @section('content')
 <h1>Players</h1>
+
+@if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
+@if (session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
+
 <a href="{{ route('players.create') }}" class="btn btn-primary mb-3">Add New Player</a>
 <form action="{{ route('players.index') }}" method="GET" class="form-inline">
     <input type="text" name="search" placeholder="Search player" class="d-inline" required>

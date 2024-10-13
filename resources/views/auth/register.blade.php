@@ -1,8 +1,3 @@
-@extends('app')
-
-@section('title', 'Register')
-
-@section('content')
 <h1>Create New Admin</h1>
 
 @if (session('success'))
@@ -32,4 +27,3 @@
     </div>
 
     <button type="submit">Create Admin</button>
-@endsection
